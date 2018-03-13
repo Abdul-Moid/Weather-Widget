@@ -1,7 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ZCc-3W-fl2">
+            <objects>
+                <viewController id="kgM-ZX-941" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Igq-X5-8Ho">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ0-H5-419">
+                                <rect key="frame" x="16" y="36" width="343" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoK-LD-SOv">
+                                        <rect key="frame" x="5" y="5" width="75.5" height="118"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NoK-LD-SOv" secondAttribute="bottom" constant="5" id="2st-Gi-FIj"/>
+                                    <constraint firstAttribute="height" constant="128" id="Lba-AQ-8RY"/>
+                                    <constraint firstItem="NoK-LD-SOv" firstAttribute="leading" secondItem="ZZ0-H5-419" secondAttribute="leading" constant="5" id="dxx-ZJ-k4D"/>
+                                    <constraint firstItem="NoK-LD-SOv" firstAttribute="top" secondItem="ZZ0-H5-419" secondAttribute="top" constant="5" id="hXE-q2-28U"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZZ0-H5-419" firstAttribute="top" secondItem="Yac-Pw-ePs" secondAttribute="top" constant="16" id="SoL-sE-tr9"/>
+                            <constraint firstItem="Yac-Pw-ePs" firstAttribute="trailing" secondItem="ZZ0-H5-419" secondAttribute="trailing" constant="16" id="xsA-ah-UPD"/>
+                            <constraint firstItem="ZZ0-H5-419" firstAttribute="leading" secondItem="Yac-Pw-ePs" secondAttribute="leading" constant="16" id="zH5-Kd-inO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yac-Pw-ePs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhj-hM-xzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328.80000000000001" y="149.77511244377811"/>
+        </scene>
+    </scenes>
 </document>
